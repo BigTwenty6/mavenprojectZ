@@ -1,5 +1,6 @@
 package com.cybertek.tests;
 
+import com.cybertek.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
@@ -13,7 +14,7 @@ public class SleepAndImplicitWaitDemo {
 
     @BeforeMethod
     public void setUp(){
-        // driver.Driver.getDriver();
+        driver = Driver.getDriver();
 
     }
     @AfterMethod
@@ -46,6 +47,9 @@ public class SleepAndImplicitWaitDemo {
 
     @Test
     public void implicitWait2() {
+
+        driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+
         driver.get("https://the-internet.herokuapp.com/dynamic_controls");
 
         driver.findElement(By.cssSelector("form#checkbox-example>button")).click();
