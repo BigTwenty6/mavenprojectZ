@@ -19,7 +19,7 @@ public class DoubleClickTest extends TestBase {
         // identify the webelement on which we will double click
         WebElement text = driver.findElement(By.id("demo"));
 
-        // double click on my webelement (text)
+        // double click on my webelement (ImplicitWaitNotes)
         actions.doubleClick(text).perform();
         // perform() needs to be added at the end of every action
 

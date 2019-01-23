@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 go to https://the-internet.herokuapp.com/upload
 upload file
 click upload
-verify text uploaded
+verify ImplicitWaitNotes uploaded
  */
 public class FileUploadTest extends TestBase {
 

@@ -34,16 +34,16 @@ public class XPath_01_Upload {
 
         /*
         EXACT TEXT SEARCH:
-        //tag[.='text']
+        //tag[.='ImplicitWaitNotes']
         <h3>Frames<h/3>
         //h3[.='Frames']
          */
 
         /*
         PARTIAL TEXT SEARCH:
-        //tag[contains(text(), 'text')]
+        //tag[contains(ImplicitWaitNotes(), 'ImplicitWaitNotes')]
         <h3>Frames<h/3>
-        //h3[contains(text(), 'Fra')]
+        //h3[contains(ImplicitWaitNotes(), 'Fra')]
          */
 
         /*
