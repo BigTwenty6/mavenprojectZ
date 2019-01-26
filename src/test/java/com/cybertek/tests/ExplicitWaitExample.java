@@ -10,6 +10,14 @@ import org.testng.annotations.Test;
 
 public class ExplicitWaitExample {
 
+    /**
+     * Explicit Wait:
+     * •There can be instance when a particular element takes more than a minute to load.
+     * •In that case you definitely not like to set a huge time to Implicit wait, as if you do this your browser will going to wait for the same time for every element.
+     * •To avoid that situation you can simply put a separate time on the required element only.
+     * •By following this your browser implicit wait time would be short for every element and it would be large for specific element.
+     */
+
     WebDriver driver;
 
     @Test
